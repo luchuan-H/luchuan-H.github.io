@@ -1,24 +1,103 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lu Chuan | Artist Portfolio</title>
-    <meta name="description" content="Artist portfolio site for luchuan-H, prepared for GitHub Pages deployment.">
+    <title>Studio Luchuan</title>
+    <meta name="description" content="Studio Luchuan, painter portfolio, exhibitions, blog, and contact.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page">
-      <section class="hero" aria-labelledby="site-title">
-        <p class="eyebrow">GitHub Pages deployment ready</p>
-        <h1 id="site-title">Artist Portfolio</h1>
-        <p class="intro">
-          This is the temporary launch page for the artist website. Once the visual
-          materials arrive, this page will become the finished portfolio for works,
-          exhibitions, biography, and contact.
-        </p>
-        <a class="button" href="https://github.com/luchuan-H/luchuan-H.github.io">View Repository</a>
+    <header class="site-header">
+      <a class="brand" href="#about" aria-label="Studio Luchuan home">
+        <span>Studio</span>
+        <strong>Luchuan</strong>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about" data-section-link="about">About</a>
+        <a href="#exhibition" data-section-link="exhibition">Exhibition</a>
+        <a href="#blog" data-section-link="blog">Blog</a>
+        <a href="#contact" data-section-link="contact">Contact</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language switch">
+        <button type="button" data-lang-button="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <aside class="side-mark" aria-label="Artist portrait">
+        <span class="rule"></span>
+        <img src="avatar.svg" alt="Portrait of Luchuan" class="portrait">
+      </aside>
+
+      <section class="panel is-active" id="about" data-section="about">
+        <div class="lang-block is-active" data-lang="en">
+          <p>Luchuan is a painter whose practice explores the shifting relationship between place, memory, everyday life, and ways of seeing. Working across oil painting, watercolor, and works on paper, his images emerge from lived experience and sustained observation, moving between the familiar and the unfamiliar - from family members, villages, rural rituals, and the landscapes of home to journeys through different regions and fragments of ordinary urban life.</p>
+          <p>Many of Luchuan's works develop through repeated encounters with particular places. Returning to familiar landscapes, travelling through unfamiliar regions, or observing the overlooked spaces of everyday life, he draws on direct observation, photography, sketches, and writing to gather visual and personal impressions. Rather than treating these places simply as subjects to be represented, he distils them into colour, form, atmosphere, and pictorial structure.</p>
+          <p>A recurring tension in Luchuan's work lies between narrative and painting itself. While his images often carry traces of personal memory, local customs, travel, and human encounters, he is equally concerned with what remains when narrative recedes: a face, a patch of colour, the weight of a landscape, or an ordinary scene made unfamiliar through sustained looking.</p>
+          <p>Underlying Luchuan's practice is an ongoing inquiry into how seeing changes over time. Through leaving and returning, familiarity and estrangement, repetition and observation, painting becomes not simply a means of recording the world, but a way of continually learning how to see it.</p>
+        </div>
+
+        <div class="lang-block" data-lang="zh">
+          <p>Luchuan 是一位画家，他的创作持续探讨地点、记忆、日常生活与观看方式之间不断变化的关系。他的作品横跨油画、水彩与纸本，图像来自生活经验与长期观察，在熟悉与陌生之间移动：从家庭成员、村庄、乡土仪式、故乡风景，到不同地域的行旅经验与普通城市生活的片段。</p>
+          <p>Luchuan 的许多作品来自对特定地点的反复相遇。他返回熟悉的风景，穿行于陌生地域，也观察日常生活中容易被忽略的空间，并通过现场观察、摄影、速写与写作收集视觉和个人印象。他并不只是把这些地点当作再现对象，而是将其提炼为色彩、形体、氛围与画面结构。</p>
+          <p>在 Luchuan 的创作中，叙事与绘画本身之间始终存在一种张力。作品常常带有个人记忆、地方习俗、旅行与人际相遇的痕迹，但他同样关心当叙事退后之后仍然留下的东西：一张脸、一片色彩、风景的重量，或一个因持续观看而变得陌生的日常场景。</p>
+          <p>贯穿 Luchuan 实践的是关于观看如何随时间变化的持续追问。通过离开与返回、熟悉与疏离、重复与观察，绘画不仅是记录世界的方式，也成为不断学习如何观看世界的过程。</p>
+        </div>
+      </section>
+
+      <section class="panel" id="exhibition" data-section="exhibition">
+        <div class="lang-block is-active" data-lang="en">
+          <h1>Exhibition</h1>
+          <p>Exhibition history will be added here, including solo presentations, group exhibitions, residencies, awards, and public projects.</p>
+          <p class="quiet">Send the exhibition list when ready, and this page can be structured by year, venue, city, and project type.</p>
+        </div>
+        <div class="lang-block" data-lang="zh">
+          <h1>展览</h1>
+          <p>这里将用于呈现个展、群展、驻留、获奖与公共项目等展览经历。</p>
+          <p class="quiet">你把展览清单发来后，我可以按年份、场馆、城市和项目类型整理成正式页面。</p>
+        </div>
+      </section>
+
+      <section class="panel" id="blog" data-section="blog">
+        <div class="lang-block is-active" data-lang="en">
+          <h1>Blog</h1>
+          <p>Notes on painting, travel, studio process, reading, and fragments of daily observation will live here.</p>
+          <article class="post-preview">
+            <time datetime="2026-08-20">2026.08.20</time>
+            <h2>Learning to See Again</h2>
+            <p>A placeholder entry for future writing on landscape, memory, and the slow work of looking.</p>
+          </article>
+        </div>
+        <div class="lang-block" data-lang="zh">
+          <h1>文章</h1>
+          <p>这里将用于发布关于绘画、行旅、工作室过程、阅读以及日常观察片段的文字。</p>
+          <article class="post-preview">
+            <time datetime="2026-08-20">2026.08.20</time>
+            <h2>重新学习观看</h2>
+            <p>这是一篇占位文章，之后可以替换为关于风景、记忆与缓慢观看的正式写作。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="contact" data-section="contact">
+        <div class="lang-block is-active" data-lang="en">
+          <h1>Contact</h1>
+          <p>For exhibitions, commissions, studio visits, or writing inquiries, please contact the studio.</p>
+          <p><a href="mailto:studio@example.com">studio@example.com</a></p>
+        </div>
+        <div class="lang-block" data-lang="zh">
+          <h1>联系</h1>
+          <p>展览、委托创作、工作室访问或文字合作，请联系工作室。</p>
+          <p><a href="mailto:studio@example.com">studio@example.com</a></p>
+        </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
